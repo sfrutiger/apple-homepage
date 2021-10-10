@@ -1,0 +1,241 @@
+
+
+body {
+    max-width: 100vw;
+    min-width: 1025px;
+    margin: 0;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul {
+    margin: 0;
+    margin-top: 85px;
+    padding: 0;
+    width: 980px;
+    display: flex;
+    background-image: linear-gradient(rgb(116, 116, 116), rgb(94, 94, 94) 50%, rgb(112, 112, 112) 50%, rgb(143, 143, 143) 100%);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+nav li {
+    cursor: pointer;
+    height: 38px;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    box-shadow: inset -1px -1px 1px rgb(94, 94, 94), 1px 0 rgb(158, 158, 158, 0.5);
+    text-shadow: 0 -1px rgb(49, 49, 49);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li:not(.last-li):hover {
+    background-color: rgb(49, 49, 49, 0.7);
+}
+
+#apple-logo {
+    height: 20px;
+    filter: drop-shadow(0 -1px rgb(49, 49, 49));
+}
+
+.last-li {
+    cursor: default;
+}
+
+.last-li:hover {
+    background-color: none;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    width: 120px;
+    border-radius: 12px;
+    border: none;
+    background-image: linear-gradient(rgb(113, 113, 113), rgb(118, 118, 118) 50%, rgb(126, 126, 126) 50%, rgb(137, 137, 137) 100%);
+    box-shadow: inset 0 2px 2px rgb(48, 48, 48), inset 0 -1px rgb(151, 151, 151);
+    transition: all .3s;
+}
+
+#search {
+    order: 1;
+    border: 0;
+    background: transparent;
+    max-width: 70%;
+}
+
+#search-icon {
+    padding: .5em;
+    height: 14px;
+    filter: drop-shadow(0 1px rgb(49, 49, 49));
+    transition: all .3s;
+}
+
+.search-input:focus-within {
+    background-image: none;
+    background-color: white;
+    width: 200px;
+    box-shadow: inset 0 2px 2px rgb(102, 102, 102), inset 0 -1px rgb(151, 151, 151);
+}
+
+#search:focus {
+    outline: none;
+    max-width: 80%;
+}
+
+#search:focus + #search-icon {
+    filter: invert(50%);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block
+}
+
+.hero {
+    width: 100%;
+    height: 540px;
+    text-align: center;
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center -775px;
+    color: white;
+}
+
+.hero-text {
+    font-family: heebo;
+}
+
+h1 {
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 64px;
+    padding: 0;
+    margin: 45px 0 10px 0;
+    line-height: 1em;
+}
+
+h2 {
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.3em;
+}
+
+.call-to-action {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 25px;
+    margin-right: 10px;
+    line-height: 1em;
+}
+
+#play-icon {
+    height: 28px;
+    filter: invert(100%);
+}
+
+h3:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 136, 205);
+}
+
+.more-info {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.img-wrapper img {
+    width: 360px;
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-wrapper {
+    width: 980px;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    column-gap: 40px;
+    font-size: 10px;
+    margin-top: 2.5em;
+}
+
+.footer-wrapper ul {
+    margin: 0;
+    padding: 0;
+}
+
+.left-grid {
+    width: 500px;
+    margin: 0;
+}
+
+.bottom-links {
+    position: relative;
+    width: 600px;
+}
+
+.bottom-links li {
+    padding: 0 5px 0 5px;
+}
+
+.bottom-links li:not(.last-link) {
+    border-right: 1px solid rgb(204, 204, 204);
+}
+
+#usa-flag {
+    position: absolute;
+    top: -2px;
+    padding: 0;
+    margin: 0;
+    width: 17px;
+}
+
+.terms {
+    display: inline;
+    margin: 0;
+}
